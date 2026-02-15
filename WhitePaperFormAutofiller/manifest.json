@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "ホワイトペーパーフォーム自動入力",
+  "version": "1.0.0",
+  "description": "money-career.com ホワイトペーパーガイドのフォームを自動入力します",
+  "permissions": ["activeTab", "scripting", "webNavigation"],
+  "host_permissions": ["*://*.money-career.com/*", "*://money-career.com/*"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_title": "フォームを自動入力（クリックで即実行）" }
+}
