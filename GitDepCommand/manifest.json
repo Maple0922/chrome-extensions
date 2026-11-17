@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "GitDepCommand",
+  "version": "1.0.0",
+  "description": "Wizleap-Inc の GitHub PR ページ上部に `git dep {repo} {PR番号}` を大きく固定表示し、クリックでコピーできるようにする",
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
